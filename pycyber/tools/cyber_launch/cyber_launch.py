@@ -481,7 +481,7 @@ def signal_handler(sig, frame):
     stop(sig)
 
 
-def main():
+def main_process():
     """
     Main function
     """
@@ -521,7 +521,7 @@ def main():
         sys.exit(1)
 
 
-if __name__ == '__main__':
+def main(args=sys.argv):
     signal.signal(signal.SIGINT, signal_handler)
     signal.signal(signal.SIGTERM, signal_handler)
-    main()
+    main_process()

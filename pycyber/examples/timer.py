@@ -20,8 +20,8 @@
 
 import time
 
-from cyber.python.cyber_py3 import cyber
-from cyber.python.cyber_py3 import cyber_timer
+from pycyber import cyber
+from pycyber import cyber_timer
 
 
 count = 0

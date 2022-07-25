@@ -18,14 +18,14 @@
 # -*- coding: utf-8 -*-
 """Module for example of listener."""
 
-from cyber.python.cyber_py3 import cyber
-from cyber.proto.unit_test_pb2 import ChatterBenchmark
+from pycyber import cyber
+from proto.examples_pb2 import Chatter
 
 
 def callback(data):
     print("-" * 80)
     print("get Request [ ", data, " ]")
-    return ChatterBenchmark(content="svr: Hello client!", seq=data.seq + 2)
+    return Chatter(content=str.encode("svr: Hello client!"), seq=data.seq + 2)
 
 
 def test_service_class():
@@ -35,7 +35,7 @@ def test_service_class():
     print("=" * 120)
     node = cyber.Node("service_node")
     r = node.create_service(
-        "server_01", ChatterBenchmark, ChatterBenchmark, callback)
+        "server_01", Chatter, Chatter, callback)
     node.spin()
 
 

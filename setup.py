@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="pycyber",
-    version="0.0.1",
+    version="0.0.2",
     author="daohu527",
     author_email="daohu527@gmail.com",
     description="Apollo autopilot middleware.",
@@ -21,18 +21,26 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     package_dir={"": "."},
-    package_data={'': [
-        'internal/*.so',
-        'tools/cyber_node/cyber_node.py',
-        'tools/cyber_channel/cyber_channel.py',
-    ]},
+    package_data={
+        '': [
+            'internal/*.so',
+            'internal/fastrtps/*.so.1',
+            'tools/cyber_channel/cyber_channel.py',
+            'tools/cyber_launch/cyber_launch.py',
+            'tools/cyber_node/cyber_node.py',
+            'tools/cyber_service/cyber_service.py',
+        ]
+    },
     packages=setuptools.find_packages(where="."),
     install_requires=[
+        'protobuf',
     ],
     entry_points={
         'console_scripts': [
-            'cyber_channel = pycyber.tools.cyber_channel.main:main',
-            'cyber_node = pycyber.tools.cyber_node.main:main',
+            'cyber_channel = pycyber.tools.cyber_channel.cyber_channel:main',
+            'cyber_launch = pycyber.tools.cyber_launch.cyber_launch:main',
+            'cyber_node = pycyber.tools.cyber_node.cyber_node:main',
+            'cyber_service = pycyber.tools.cyber_service.cyber_service:main',
         ],
     },
     python_requires=">=3.6",

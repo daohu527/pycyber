@@ -20,8 +20,8 @@
 
 import time
 
-from cyber.python.cyber_py3 import cyber
-from cyber.proto.unit_test_pb2 import ChatterBenchmark
+from pycyber import cyber
+from proto.examples_pb2 import Chatter
 
 
 def test_client_class():
@@ -29,9 +29,9 @@ def test_client_class():
     Client send request
     """
     node = cyber.Node("client_node")
-    client = node.create_client("server_01", ChatterBenchmark, ChatterBenchmark)
-    req = ChatterBenchmark()
-    req.content = "clt:Hello service!"
+    client = node.create_client("server_01", Chatter, Chatter)
+    req = Chatter()
+    req.content = str.encode("clt:Hello service!")
     req.seq = 0
     count = 0
     while not cyber.is_shutdown():

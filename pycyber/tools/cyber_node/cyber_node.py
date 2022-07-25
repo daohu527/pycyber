@@ -107,7 +107,7 @@ Type cyber_node <command> -h for more detailed usage, e.g. 'cyber_node info -h'
     sys.exit(getattr(os, 'EX_USAGE', 1))
 
 
-if __name__ == '__main__':
+def main(args=sys.argv):
     if len(sys.argv) == 1:
         _printallusage()
 
