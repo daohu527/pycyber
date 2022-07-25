@@ -18,10 +18,11 @@
 # -*- coding: utf-8 -*-
 """Module for example of talker."""
 
+import sys
 import time
 
 from pycyber import cyber
-from proto.examples_pb2 import Chatter
+from pycyber.examples.proto.examples_pb2 import Chatter
 
 def test_talker_class():
     """
@@ -46,7 +47,7 @@ def test_talker_class():
         writer.write(msg)
 
 
-if __name__ == '__main__':
+def main(args=sys.argv):
     cyber.init("talker_sample")
     test_talker_class()
     cyber.shutdown()

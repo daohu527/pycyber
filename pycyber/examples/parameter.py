@@ -18,6 +18,8 @@
 # -*- coding: utf-8 -*-
 """Module for example of parameter."""
 
+import sys
+
 from pycyber import cyber
 from pycyber import parameter
 

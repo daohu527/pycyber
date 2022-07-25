@@ -1,0 +1,29 @@
+Log file created at: 2022/07/25 23:43:27
+Running on machine: zero-ThinkPad-E450
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0725 23:43:27.444204  7236 global_data.cc:153] host ip: 192.168.3.14
+W0725 23:43:27.444226  7236 environment.h:33] Environment variable [CYBER_PATH] not set, fallback to 
+W0725 23:43:27.448529  7236 environment.h:33] Environment variable [CYBER_PATH] not set, fallback to 
+W0725 23:43:27.448575  7236 scheduler_factory.cc:63] Scheduler conf named /apollo/cyber/conf/python3.7_7236.conf not found, use default.
+W0725 23:43:27.448613  7236 environment.h:33] Environment variable [CYBER_PATH] not set, fallback to 
+I0725 23:43:27.448794  7238 processor.cc:42] processor_tid: 7238
+I0725 23:43:27.449889  7239 processor.cc:42] processor_tid: 7239
+I0725 23:43:27.449992  7240 processor.cc:42] processor_tid: 7240
+I0725 23:43:27.450050  7241 processor.cc:42] processor_tid: 7241
+I0725 23:43:27.451021  7242 processor.cc:42] processor_tid: 7242
+I0725 23:43:27.451078  7243 processor.cc:42] processor_tid: 7243
+I0725 23:43:27.451198  7244 processor.cc:42] processor_tid: 7244
+I0725 23:43:27.451298  7245 processor.cc:42] processor_tid: 7245
+I0725 23:43:27.451350  7246 processor.cc:42] processor_tid: 7246
+I0725 23:43:27.461390  7247 processor.cc:42] processor_tid: 7247
+I0725 23:43:27.463065  7248 processor.cc:42] processor_tid: 7248
+I0725 23:43:27.463151  7249 processor.cc:42] processor_tid: 7249
+I0725 23:43:27.463202  7250 processor.cc:42] processor_tid: 7250
+I0725 23:43:27.465396  7251 processor.cc:42] processor_tid: 7251
+I0725 23:43:27.465492  7252 processor.cc:42] processor_tid: 7252
+W0725 23:43:27.473246  7236 environment.h:33] Environment variable [sysmo_start] not set, fallback to 
+I0725 23:43:27.473299  7236 init.cc:113] Register exit handle succ.
+I0725 23:43:27.473305  7253 processor.cc:42] processor_tid: 7253
+I0725 23:43:27.473347  7236 py_cyber.h:58] cyber init succ.
+I0725 23:43:27.478072  7236 scheduler.cc:55] create croutine: listener_channel/chatter
+I0725 23:43:27.478936  7236 py_cyber.cc:250] reader regist fun
