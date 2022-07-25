@@ -6,7 +6,7 @@ apollo cyber python package
 #### Install
 You can install `pycyber` via cmd below.
 ```shell
-pip install pycyber
+pip3 install pycyber
 ```
 
 #### Usage
