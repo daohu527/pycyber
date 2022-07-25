@@ -18,7 +18,7 @@
 import os
 import sys
 
-from cyber.python.cyber_py3 import cyber
+from pycyber import cyber
 
 def print_service_info(service_name, sleep_s=2):
     roleattr_rawdata = cyber.ServiceUtils.get_service_attr(service_name, sleep_s)

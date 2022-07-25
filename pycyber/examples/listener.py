@@ -18,8 +18,10 @@
 # -*- coding: utf-8 -*-
 """Module for example of listener."""
 
+import sys
+
 from pycyber import cyber
-from proto.examples_pb2 import Chatter
+from pycyber.examples.proto.examples_pb2 import Chatter
 
 
 def callback(data):
@@ -42,7 +44,7 @@ def test_listener_class():
     test_node.spin()
 
 
-if __name__ == '__main__':
+def main(args=sys.argv):
     cyber.init()
     test_listener_class()
     cyber.shutdown()
