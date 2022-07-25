@@ -15,36 +15,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ****************************************************************************
-# -*- coding: utf-8 -*-
-"""Module for example of listener."""
 
 import sys
-import time
-
-from pycyber import cyber
-from pycyber.examples.proto.examples_pb2 import Chatter
 
 
-def test_client_class():
-    """
-    Client send request
-    """
-    node = cyber.Node("client_node")
-    client = node.create_client("server_01", Chatter, Chatter)
-    req = Chatter()
-    req.content = str.encode("clt:Hello service!")
-    req.seq = 0
-    count = 0
-    while not cyber.is_shutdown():
-        time.sleep(1)
-        count += 1
-        req.seq = count
-        print("-" * 80)
-        response = client.send_request(req)
-        print("get Response [ ", response, " ]")
-
-
-if __name__ == '__main__':
-    cyber.init()
-    test_client_class()
-    cyber.shutdown()
+if sys.version_info[0] < 3:
+    sys.stderr.write('''
+        You are running Python2 while importing Python3 Cyber wrapper!
+        Please change to "import cyber_py.xyz" accordingly.\n''')
+    sys.exit(1)

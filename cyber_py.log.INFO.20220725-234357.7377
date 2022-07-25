@@ -1,0 +1,27 @@
+Log file created at: 2022/07/25 23:43:57
+Running on machine: zero-ThinkPad-E450
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0725 23:43:57.846880  7377 global_data.cc:153] host ip: 192.168.3.14
+W0725 23:43:57.846901  7377 environment.h:33] Environment variable [CYBER_PATH] not set, fallback to 
+W0725 23:43:57.850356  7377 environment.h:33] Environment variable [CYBER_PATH] not set, fallback to 
+W0725 23:43:57.850399  7377 scheduler_factory.cc:63] Scheduler conf named /apollo/cyber/conf/python3.7_7377.conf not found, use default.
+W0725 23:43:57.850422  7377 environment.h:33] Environment variable [CYBER_PATH] not set, fallback to 
+I0725 23:43:57.850594  7379 processor.cc:42] processor_tid: 7379
+I0725 23:43:57.850647  7380 processor.cc:42] processor_tid: 7380
+I0725 23:43:57.850739  7381 processor.cc:42] processor_tid: 7381
+I0725 23:43:57.850759  7382 processor.cc:42] processor_tid: 7382
+I0725 23:43:57.850817  7383 processor.cc:42] processor_tid: 7383
+I0725 23:43:57.850874  7384 processor.cc:42] processor_tid: 7384
+I0725 23:43:57.852710  7385 processor.cc:42] processor_tid: 7385
+I0725 23:43:57.852833  7386 processor.cc:42] processor_tid: 7386
+I0725 23:43:57.852875  7387 processor.cc:42] processor_tid: 7387
+I0725 23:43:57.852934  7388 processor.cc:42] processor_tid: 7388
+I0725 23:43:57.852999  7389 processor.cc:42] processor_tid: 7389
+I0725 23:43:57.853071  7390 processor.cc:42] processor_tid: 7390
+I0725 23:43:57.853123  7391 processor.cc:42] processor_tid: 7391
+I0725 23:43:57.853168  7392 processor.cc:42] processor_tid: 7392
+I0725 23:43:57.853222  7393 processor.cc:42] processor_tid: 7393
+I0725 23:43:57.853264  7394 processor.cc:42] processor_tid: 7394
+W0725 23:43:57.853269  7377 environment.h:33] Environment variable [sysmo_start] not set, fallback to 
+I0725 23:43:57.853293  7377 init.cc:113] Register exit handle succ.
+I0725 23:43:57.853302  7377 py_cyber.h:58] cyber init succ.
