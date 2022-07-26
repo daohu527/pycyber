@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="pycyber",
-    version="0.0.3",
+    version="0.0.4",
     author="daohu527",
     author_email="daohu527@gmail.com",
     description="Apollo autopilot middleware.",
@@ -25,6 +25,7 @@ setuptools.setup(
         '': [
             'internal/*.so',
             'internal/fastrtps/*.so.1',
+            'conf/*',
             'tools/cyber_channel/cyber_channel.py',
             'tools/cyber_launch/cyber_launch.py',
             'tools/cyber_node/cyber_node.py',
@@ -44,5 +45,5 @@ setuptools.setup(
             'talker = pycyber.examples.talker:main',
         ],
     },
-    python_requires=">=3.6",
+    python_requires=">=3.6, <=3.8",
 )
