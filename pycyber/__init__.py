@@ -16,8 +16,18 @@
 # limitations under the License.
 # ****************************************************************************
 
+import os
 import sys
 
+# Set environment variables
+if os.getenv('CYBER_PATH') is None:
+    os.environ['CYBER_PATH'] = os.getcwd()
+
+if os.getenv('CYBER_DOMAIN_ID') is None:
+    os.environ['CYBER_DOMAIN_ID'] = "80"
+
+if os.getenv('CYBER_IP', default = None) is None:
+    os.environ['CYBER_IP'] = "127.0.0.1"
 
 if sys.version_info[0] < 3:
     sys.stderr.write('''
