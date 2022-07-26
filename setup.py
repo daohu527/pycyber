@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="pycyber",
-    version="0.0.4",
+    version="0.0.5",
     author="daohu527",
     author_email="daohu527@gmail.com",
     description="Apollo autopilot middleware.",
@@ -34,6 +34,7 @@ setuptools.setup(
     },
     packages=setuptools.find_packages(where="."),
     install_requires=[
+        'protobuf<=3.19.4',
     ],
     entry_points={
         'console_scripts': [
