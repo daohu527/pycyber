@@ -44,3 +44,7 @@ You can set cyber IP address by below command.
 ```shell
 export CYBER_IP=127.0.0.1
 ```
+
+#### tutorial
+Here is a game about pycyber [pycyber_tutorial](https://github.com/daohu527/pycyber_tutorial)  
+
