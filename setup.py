@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="pycyber",
-    version="0.0.5",
+    version="0.0.6",
     author="daohu527",
     author_email="daohu527@gmail.com",
     description="Apollo autopilot middleware.",
@@ -34,7 +34,7 @@ setuptools.setup(
     },
     packages=setuptools.find_packages(where="."),
     install_requires=[
-        'protobuf<=3.19.4',
+        'protobuf>=3.17.0',
     ],
     entry_points={
         'console_scripts': [
@@ -46,5 +46,5 @@ setuptools.setup(
             'talker = pycyber.examples.talker:main',
         ],
     },
-    python_requires=">=3.6, <=3.8",
+    python_requires=">=3.6",
 )
